@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>WebWise</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mobile App Development">
+        <meta name="keywords" content="Android,Android Development">
+        <meta name="James O'Keeffe" content="HTML">
+            <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+</head>
+        
+<body>
+    
+<div id ="wrapper">
+      
+<header>
+    <div id ="logo"> 
+    <img src="images/Logo.png" alt="logo"  />
+    </div>
+    
+</header>
+    
+      
+<nav>
+    <ul class="fancyNav">
+        <li id="home"><a href="#home" class="homeIcon">Home</a></li>
+        <li id="about"><a href="#about">About us</a></li>
+        <li id="services"><a href="#services">Services</a></li>
+        <li id="contact"><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+        
+        
+
+
+    
+<div id="slider">
+    <script language="javascript">
+
+/*
+Random image slideshow- using JavaScript
+*/
+
+var delay=7000 //set delay in miliseconds
+var curindex=0
+
+var randomimages=new Array()
+
+	randomimages[0]="images/banner 1.jpg"
+	randomimages[1]="images/banner2.png"
+	randomimages[2]="images/banner3.png"
+	
+
+var preload=new Array()
+
+for (n=0;n<randomimages.length;n++)
+{
+	preload[n]=new Image()
+	preload[n].src=randomimages[n]
+}
+
+document.write('<img name="defaultimage" src="'+randomimages[Math.floor(Math.random()*(randomimages.length))]+'">')
+
+function rotateimage()
+{
+
+if (curindex==(tempindex=Math.floor(Math.random()*(randomimages.length)))){
+curindex=curindex==0? 1 : curindex-1
+}
+else
+curindex=tempindex
+
+	document.images.defaultimage.src=randomimages[curindex]
+}
+
+setInterval("rotateimage()",delay)
+
+</script>
+
+</div>
+    
+
+<div class="section">
+    <div class="leftpane"><blockquote><p>"We have the best development team in the game with WebWise. Hands down. They take our ideas and make them better. They are wonderful to work with."
+<br><br><strong>John Reardon</strong><br>
+
+CEO of musx
+        </p></blockquote>
+ </div>   
+        <div class="middlepane"><iframe width="320" height="250" src="https://www.youtube.com/embed/pwan8vrt0t0" frameborder="0" allowfullscreen></iframe>
+        </div>
+    
+    <div class="rightpane"><blockquote><p>"The app is gorgeous and rock-solid technically.              Everyone on their team is an expert. I highly recommend Savvy to anyone looking for         top-tier app design and development."
+    <br><br><strong>Jim Jarrett</strong>
+    <br>
+    Senior Manager at Good Technology
+    </p>
+    </blockquote>
+    
+    </div>
+</div>
+    
+<article>
+    
+    
+<div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2462.540347311041!2d-8.590723748508085!3d51.88760249055386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4844920d91150d8d%3A0x4cc64c33e163a46f!2sTime+Square%2C+Ballincollig%2C+Co.+Cork!5e0!3m2!1sen!2sie!4v1481026959029" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <div id ="address">
+      <p><strong>Address:</strong> Burlington House,Time Square,Ballincollig, Co Cork, Ireland
+<br>
+<br>
+      <strong>Email: </strong>info@webwise.ie
+<br>
+<strong>Web: </strong>www.webwise.ie </p>
+    </div>  
+ </div>
+    <div class ="about"><img src="images/about.jpg" alt="logo"  /><p>Formed in 2011, WebWise is a small, flexible and very talented app             development company with a base in County Cork, Ireland. 
+
+        We’re expert app developers in native iOS (iPhone, iPad, Apple Watch) & Android mobile apps, web and UI/UX design. And we continue to surpass and exceed our clients expectations on a regular basis. 
+
+        We’ve been app developers for a very long time and it seems people really, really like what we do.</p></div>
+    
+<div id="contact">
+    <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+	   <div class="flipper">
+		  <div class="front">
+		      <div id ="Contactus"> 
+        <img src="images/contact.png" alt="logo"/>
+                </div>
+           </div>
+        
+		<div class="back">
+			<form id="contact">
+                <div class="container">
+                    <div class="head">
+                        <h2>Say Hello</h2>
+                    </div>
+    
+      <input type="text" name="name" placeholder="Name" /><br />
+    
+      <input  type="email" name="email" placeholder="Email" /><br />
+    
+      <textarea type="text" name="message" placeholder="Message"></textarea><br />
+    
+      <div class="message">Message Sent</div>
+    
+      <button id="submit" type="submit">
+      Send!
+      </button>
+  
+                
+                </div>
+            </form>
+		</div>
+	</div>
+    </div>
+    </div>
+    
+       
+    </article>
+<footer>
+<p>Copyright James O'Keeffe 2016 ©</p>
+    
+<div id="socialm"> 
+    <img src="images/facebook.png">
+    <img src="images/twitter.png">
+    <img src="images/google+.png">
+    <img src="images/skype.png">
+</div>
+    
+
+    
+</footer>
+    
+    
+        
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,397 @@
+body{
+	margin-top:0px;
+	background-image:url(images/background.png);
+    background-size: cover;
+   background-repeat: no-repeat;
+        
+}
+
+
+#wrapper {
+		width:1000px;
+		margin-left:auto;
+		margin-right:auto;
+}  
+
+	
+header {
+	width:200px;
+	height:175px;
+   
+    float: left;
+}
+#logo {
+text-align: left;
+    width: 200px;
+    height:175px;
+    background-color: transparent;
+}
+   
+	
+
+nav {
+    margin-top: 100px;
+  width:500px;
+  background:transparent;
+  padding:  5px 0;
+  box-shadow: 5px 5px 0px transparent;
+  float: right;
+    padding-bottom:10px;
+
+}
+nav ul {
+  list-style:none;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #275b76;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color:#ebd799;
+}
+
+
+/* stroke */
+nav.fill ul li a {
+  transition: all 2s;
+}
+
+nav.fill ul li a:after {
+  text-align: right  ;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #ebd799;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+#slider{
+            width: 1000px;
+            height: 200px;
+            background-color: transparent;
+            margin-left: auto;
+            margin-right: auto;
+            margin top:10px;
+    
+            text-align: center;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+
+.section {
+  width: 1000px;
+  height: 250px;
+  margin-bottom: 15px;
+    background-color:  #275b76;
+    }
+
+.leftpane {
+    width: 320px;
+    height: 250px;
+    float: left;  
+}
+
+.leftpane p{
+    color:  #ebd799;
+    text-align: center;
+    padding: 5px;
+   font-style: italic;
+    
+}
+
+.middlepane {
+    width: 320px;
+    height: 250px;
+    float:left;
+    border-collapse: collapse;
+    margin-left: 10px;
+    margin-right: 10px;
+   
+}
+
+.rightpane {
+  width: 320px;
+  height: 250px;
+  float: right;  
+}
+.rightpane p{
+    color:  #ebd799;
+    text-align: center;
+    padding: 5px;
+   font-style: italic;
+    
+}
+article{
+    width: 1000px;
+    height: 425px;
+    background-color: #ebd799; 
+  
+     
+}
+#address{
+    height: 150px;
+    width: 320px;
+    margin-left: 10px;
+    float: right;
+    margin-top: 30px;
+    color: #275b76;
+
+    
+}
+#map{
+    height: 200px;
+    width: 320px;
+    float:right;
+    margin: 10px;   
+}
+
+.about{
+    float: right;
+    width: 320px;
+    height: auto;
+    text-align: center;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
+.about p{
+    color:#275b76; 
+}
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 320px;
+	height: 430px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+#Contactus{
+    width: 150px;
+    height:170px;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 70px
+  
+}
+
+/* back, initially hidden pane */
+.back {
+	transform: rotateY(180deg);
+}
+
+
+/
+#contact{
+}
+             
+ .container {
+  max-width:310px;
+  margin:0 auto;
+  text-align:center;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  background-color:#FAFAFA;
+}
+.head {
+  -webkit-border-radius:6px 6px 0px 0px;
+  -moz-border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0px 0px;
+  background-color:#275b76;
+  color:#FAFAFA;
+}
+h2 {
+  text-align:center;
+  padding:10px 0 10px 0;
+  font-size: 1.4em;
+}
+input {
+  margin-bottom:10px;
+}
+textarea {
+  height:100px;
+  margin-bottom:10px;
+}
+input:first-of-type
+{
+  margin-top:25px;
+}
+input, textarea {
+  font-size: 1em;
+  padding: 15px 10px 10px;
+  font-family: 'Source Sans Pro',arial,sans-serif;
+  border: 1px solid #cecece;
+  background: #d7d7d7;
+  color:#FAFAFA;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 80%;
+  max-width: 320px;
+}
+::-webkit-input-placeholder {
+   color: #FAFAFA;
+}
+:-moz-placeholder {
+   color: #FAFAFA;  
+}
+::-moz-placeholder {
+   color: #FAFAFA; 
+}
+:-ms-input-placeholder {  
+   color: #FAFAFA;  
+}
+button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#275b76;
+  padding: 12px 12px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #275b76;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+    text-align: center;
+}
+button:hover, .button:hover {
+  background:#275b76;
+}
+label.error {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1em;
+    display:block;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#d89c9c;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}
+/* media queries */
+@media (max-width: 320px) {
+  label.error {
+    width: 90%;
+  }
+  input, textarea {
+    width: 90%;
+  }
+  button {
+    width:90%;
+  }
+  body {
+  padding-top:5px;
+  }  
+}
+.message {
+    font-family:'Source Sans Pro',arial,sans-serif;
+    font-size:1.1em;
+    display:none;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#275b76;
+    width: 80%;
+    margin:auto;
+    color: #FAFAFA;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border-radius:6px;
+}  
+
+article p{
+    width: 310px;
+    float: inherit;
+    
+}
+
+
+footer{
+    width:100%;
+    height: 45px;
+    background-color: #275b76;
+    margin-top: 15px;
+    padding-top: 10px
+        
+}
+footer p{
+    float:right;
+    color:black;
+    width: 250px;
+    height: 30px;
+    margin:auto;
+    padding-top: 10px;
+    color:#ebd799;
+}
+
+#socialm{
+    text-align: left;
+    width:320px;
+    height: 35px;
+    float: left;
+    margin-left: 10px;
+ 
+}
+
